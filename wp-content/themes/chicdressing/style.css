@@ -1,0 +1,102 @@
+/*
+Theme Name:		 chicdressing
+Theme URI:		 http://childtheme-generator.com/
+Description:	 chicdressing is a child theme of Ashe, created by ChildTheme-Generator.com
+Author:			 Chic Dressing
+Author URI:		 http://childtheme-generator.com/
+Template:		 ashe
+Version:		 1.0.0
+Text Domain:	 chicdressing
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('fonts/Kalam-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+}
+
+body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
+    color: #666666;
+    font-size: 12px;
+}
+
+
+body .header-logo a{
+    color: white;
+    text-shadow: 2px 3px 5px #d0527a;
+    transform: rotate(-9deg);
+}
+.text-center{
+    text-align:center;
+}
+
+.chic-bouton{
+    color: #ffffff;
+    background-color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 14px;
+}
+
+#featured-slider{
+    margin-bottom:30px;
+}
+#chic-products{
+    padding:0 40px;
+}
+.chic-title{
+    font-family: 'Kalam';
+    font-size: 52px;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    margin:30px 40px;
+    text-align:center;
+    color: #9d4c64 !important;
+    line-height: 48px;
+}
+#chic-products ul.products li.product{
+    background: #f6f6f6;
+    padding-bottom: 20px;
+}
+
+.post-date {
+    color: #666666 !important;
+}
+
+.post-categories a {
+    color: #7a5a28 !important;
+}
+
+#chic-products .add_to_cart_button {
+    color: #7a5a28 !important;
+    border-color: #7a5a28 !important;
+}
