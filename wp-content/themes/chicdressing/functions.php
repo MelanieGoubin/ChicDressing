@@ -49,3 +49,21 @@ function chicdressing_accessible_mailpoet_antispam() {
     <?php
 }
 add_action( 'wp_footer', 'chicdressing_accessible_mailpoet_antispam', 100 );
+
+// Corrige les références ARIA cassées générées par le slider Slick
+function chicdressing_fix_slider_aria() {
+    ?>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('#featured-slider [aria-describedby]').forEach(function (slide) {
+            const targetId = slide.getAttribute('aria-describedby');
+
+            if (targetId && !document.getElementById(targetId)) {
+                slide.removeAttribute('aria-describedby');
+            }
+        });
+    });
+    </script>
+    <?php
+}
+add_action( 'wp_footer', 'chicdressing_fix_slider_aria', 110 );

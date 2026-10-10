@@ -100,3 +100,14 @@ body .header-logo a{
     color: #7a5a28 !important;
     border-color: #7a5a28 !important;
 }
+
+/* Amélioration du contraste pour l'accessibilité */
+.post-categories,
+.post-categories a,
+.rpwwt-post-categories {
+    color: #555555 !important;
+}
+
+.read-more a {
+    color: #555555 !important;
+}
